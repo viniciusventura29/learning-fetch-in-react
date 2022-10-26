@@ -22,6 +22,28 @@ const livros = [
     genero: "Romance",
     image: ""
   },
+  {
+    name: "Extraordinário",
+    author: "Rachel Agavino",
+    data: "31/01/2013",
+    genero: "Drama",
+    image: ""
+  },
+  {
+    name: "A Arte da Guerra",
+    author: "Sun Tzu",
+    data: "20/05/2015",
+    genero: "Ficção de aventura",
+    image: ""
+  },
+  {
+    name: "Maus",
+    author: "Art Spiegelman",
+    data: "09/12/2021",
+    genero: "História em quadrinhos",
+    image: ""
+  },
+
 ];
 
 app.get("/livros", (req, res) => {
