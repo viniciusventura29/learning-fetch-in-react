@@ -11,10 +11,16 @@ const livros = [
   {
     name: "1984",
     author: "George Orwell",
+    data: "08/06/1949",
+    genero: "Romance",
+    image: "./1984.jpg"
   },
   {
     name: "Capitões de areia",
     author: "Jorge Amado",
+    data: "1937",
+    genero: "Romance",
+    image: ""
   },
 ];
 
