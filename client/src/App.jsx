@@ -64,25 +64,27 @@ export default function App() {
           <ModalHeader>Create your account</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
-            <FormControl>
+            <form method="POST" action="submit">
+            <FormControl mt={2}>
               <FormLabel>Book name</FormLabel>
-              <Input ref={initialRef} placeholder='Book name' />
+              <Input ref={initialRef} name="bookName" placeholder='Book name' />
             </FormControl>
 
-            <FormControl>
+            <FormControl mt={2}>
               <FormLabel>Author name</FormLabel>
-              <Input ref={initialRef} placeholder='Author name' />
+              <Input ref={initialRef} name="author" placeholder='Author name' />
             </FormControl>
 
-            <FormControl>
+            <FormControl mt={2}>
               <FormLabel>Publication date</FormLabel>
-              <Input type='date' ref={initialRef} placeholder='Publication date' />
+              <Input type='date' ref={initialRef} name="date" placeholder='Publication date' />
             </FormControl>
 
             <FormControl mt={4}>
               <FormLabel>Photo</FormLabel>
-              <Input type='file' placeholder='Photo' />
+              <Input type='file' name="photo" placeholder='Photo' />
             </FormControl>
+            </form>
           </ModalBody>
 
           <ModalFooter>

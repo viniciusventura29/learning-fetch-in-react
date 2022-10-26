@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 
+
 const app = express();
 const port = 8000;
 
@@ -51,6 +52,11 @@ app.get("/livros", (req, res) => {
 });
 
 app.post("/livros", (req, res) => {
+  let bookName = String(req.body.bookName);
+  let author = String(req.body.author);
+  let date = Date(req.body.date);
+  let photo = File(req.body.photo);
+
   livros.push(req.body);
   res.json({ msg: "Added book successfully" });
 });
